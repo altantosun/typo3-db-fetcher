@@ -10,7 +10,6 @@ class FetchTablesAndFields
 {
     public static function fetchFieldsFromTable(string $tableName): array
     {
-
         /** @var ConnectionPool $connectionPool */
         $connectionPool = GeneralUtility::makeInstance(ConnectionPool::class);
         $queryBuilder = $connectionPool->getConnectionForTable($tableName);
